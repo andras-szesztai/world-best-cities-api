@@ -1,0 +1,26 @@
+{
+  "name": "world-best-cities-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^3.14.0",
+    "apollo-server": "^3.8.1",
+    "graphql": "^16.5.0"
+  },
+  "devDependencies": {
+    "@tsconfig/node16": "^1.0.2",
+    "prisma": "^3.14.0",
+    "ts-node": "^10.8.0",
+    "typescript": "^4.7.2"
+  },
+  "prisma": {
+    "seed": "ts-node --compiler-options {\"module\":\"CommonJS\"} prisma/seed.ts"
+  }
+}
