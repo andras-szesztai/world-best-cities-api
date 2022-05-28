@@ -9,6 +9,7 @@ const server = new ApolloServer({
     typeDefs,
     resolvers: resolvers,
     context: () => ({ db: prisma }),
+    introspection: true,
 })
 server.listen({ port: process.env.PORT || 4000 }).then(({ url }) => {
     console.log(`
