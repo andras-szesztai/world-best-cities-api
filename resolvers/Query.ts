@@ -1,5 +1,5 @@
 import { PrismaClient } from '@prisma/client'
-import { QueryResolvers } from 'types/graphql.generated'
+import { QueryResolvers } from '../types/graphql.generated'
 
 export interface ResolverContext {
     db: PrismaClient
