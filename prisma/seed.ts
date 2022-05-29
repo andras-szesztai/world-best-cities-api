@@ -1,4 +1,4 @@
-import data from '../data/cities.json'
+import data from './data/cities.json'
 import { slugify } from '../utils/string'
 
 import prisma from './prisma'

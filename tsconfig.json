@@ -2,8 +2,12 @@
   "extends": "@tsconfig/node16/tsconfig.json",
   "compilerOptions": {
     "resolveJsonModule": true,
-    "outDir": "dist",
+    "baseUrl": ".",
+    "paths": {
+      "schemas/*": ["schemas/*"],
+      "resolvers/*": ["resolvers/*"],
+    }
   },
-  "include": ["app"],
+  "include": ["**/*.ts"],
   "exclude": ["node_modules"]
 }
